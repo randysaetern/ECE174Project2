@@ -1,0 +1,67 @@
+// OPcodes for the 6 MSB of the instructions
+`define Rformat 6'b000000
+`define Bltzgez 6'b000001
+`define jump 6'b000010
+`define jumpAndLink 6'b000011
+`define beq 6'd4
+`define bne 6'd5
+`define blez 6'd6
+`define bgtz 6'd7
+// Imediate type functions and stufffff
+`define addi 6'b001000
+`define addiu 6'b001001
+`define slti 6'b001010
+`define sltiu 6'b001011
+`define andi 6'b001100
+`define ori 6'b001101
+`define xori 6'b001110
+`define ldrui 6'b001111
+`define tlb 6'b010000
+`define FlPt 6'b010001 // use this
+`define ldrb 6'b100000
+`define ldrh 6'b100001
+`define lwl 6'b100010
+`define ldrw 6'b100011
+`define ldrbu 6'b100100
+`define ldrhu 6'b100101
+`define lwr 6'b100110
+`define strb 6'b101000
+`define strh 6'b101001
+`define swl 6'b101010
+`define strw 6'b101011
+`define swr 6'b101110
+`define ldrlw 6'b110000
+`define lwcl 6'b110001
+`define strcondword 6'b111000
+`define swcl 6'b111001
+//R- type instructions for the last 6 bits
+`define rsll 6'b000000
+`define rsrl 6'b000010
+`define rsra 6'b000011
+`define rsllv 6'b000100
+`define rsrlv 6'b000110
+`define rsrav 6'b000111
+`define rjr 6'b001000
+`define rjalr 6'b001001
+`define rsyscall 6'b001100
+`define rbreak 6'b001101
+`define rmfhi 6'b010000
+`define rmthi 6'b010001
+`define rmflo 6'b010010
+`define rmtlo 6'b010011
+`define rmult 6'b011000
+`define rmultu 6'b011001
+`define rdiv 6'b011010
+`define rdivu 6'b011011
+`define radd 6'b100000
+`define raddu 6'b100001
+`define rsub 6'b100010
+`define rsubu 6'b100011
+`define rand 6'b100100
+`define ror 6'b100101
+`define rxor 6'b100110
+`define rnot 6'b100111
+`define rslt 6'b101010
+`define rsltu 6'b101011
+// For branch comparison operations
+`define branching 6'b110010
